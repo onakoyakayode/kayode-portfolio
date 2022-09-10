@@ -1,0 +1,323 @@
+.resume-container {
+    position: relative;
+    top: 70px;
+    min-height: calc(100%- 70px);
+    padding: 0 50px 150px 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-container {
+        top: 50px;
+        min-height: calc(100%- 50px);
+        padding: 0 10px 50px 10px;
+    }
+}
+
+
+.resume-title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: #999;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-title {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+}
+
+
+.resume-title::after {
+    content: "";
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    width: 4%;
+    height: 4px;
+    background-color: #EF5350;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-title::after {
+        left: 45%;
+        width: 10%;
+        height: 3px;
+    }
+}
+
+
+.resume-description {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-description {
+        margin-top: 30px;
+    }
+}
+
+
+.resume-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    margin-block: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-details {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-block: 3rem;
+    }
+}
+
+.role-company {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .role-company {
+        font-size: 1.3rem;
+    }
+}
+
+.role-company.one {
+    color: #37FF8B;
+}
+
+
+.role-company.two {
+    color: #BF0426;
+}
+
+.role-company.three {
+    
+    color:  hsl(210deg 100% 44%);
+}
+
+.role-company.four {
+    color: rgba(16, 185, 129);
+}
+
+
+.role {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+
+.role-heading {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .role {
+        font-size: .95rem;
+    }
+}
+
+.role-heading span {
+    display: block;
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 600px) {
+    .role-heading span {
+        font-size: .85rem;
+    }
+}
+
+.responsibilities ul {
+    margin-top: 1rem;
+}
+
+.responsibilities ul > li {
+    margin-block: 5px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .responsibilities ul > li {
+        font-size: 0.95rem;
+        list-style-position: inside;
+    }
+}
+
+
+.resume-download {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-download {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+.buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 15px 35px;
+    background-color: rgba(16, 185, 129);
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .buttonDownload {
+        font-size: 0.95em;
+    }
+}
+   
+.buttonDownload:hover {
+    background-color: rgba(16, 185, 129);
+    color: white;
+}
+   
+.buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+   
+.buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+   
+.buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+}
+   
+.buttonDownload:hover:before {
+    border-color: #cdefbd;
+}
+   
+.buttonDownload:hover:after {
+    border-top-color: #cdefbd;
+    animation-play-state: running;
+}
+   
+@keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.4;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.4;
+    }
+}
+
+
+
+.contact-btn {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 3px;
+    height: 3em;
+    padding: 0 3em;
+    border: none;
+    background-color: #BF0426;
+    color: #fff;
+    text-transform: capitalize;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-btn {
+        font-size: 0.95rem;
+        letter-spacing: 3px;
+    }
+}
+
+.contact-btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background: #BF0426;
+    background: linear-gradient(90deg, #BF0426 20%, #bf0426a9 100%);
+    transition: 0.2s;
+}
+   
+.contact-btn .label {
+    position: relative;
+}
+   
+.contact-btn .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+   
+.contact-btn:hover::before {
+    height: 100%;
+   }
+   
+.contact-btn:hover .icon {
+    top: 0;
+    opacity: 1;
+}

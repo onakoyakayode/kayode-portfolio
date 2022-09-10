@@ -1,0 +1,277 @@
+.portfolio {
+    position: relative;
+    top: 70px;
+    min-height: calc(100%- 70px);
+    padding: 0 50px 150px 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio {
+        top: 50px;
+        padding: 0 10px 50px 10px;
+    }
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    margin: 60px 0 80px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-title {
+        font-size: 1.3rem;
+        margin: 30px 0 50px 0;
+    }
+}
+
+.portfolio-title::after {
+    content: "";
+    position: absolute;
+    left: 47%;
+    bottom: 0;
+    width: 6%;
+    height: 4px;
+    background-color: #EF5350;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-title::after {
+        width: 10%;
+        height: 3px;
+    }
+}
+
+
+.portfolio-img {
+    width: 350px;
+    height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-img {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+.portfolio-img .portfolio-img-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-img .portfolio-img-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.portfolio-img .portfolio-img-img:hover {
+    transform: scale(1.04);
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-img .portfolio-img-img:hover {
+        transform: scale(1.02);
+    }
+}
+
+
+.portfolio-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+.portfolio-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 4px 4px 10px #111;
+    padding: 5px 5px 15px 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 4px 4px 10px #111;
+        padding: 5px 5px 15px 5px;
+    }
+}
+
+
+.portfolio-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-link a {
+        font-size: 1rem;
+    }
+}
+
+.portfolio-link a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #EF5350;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.portfolio-link a:hover::after {
+    width: 100%;
+}
+
+.resume-link .resume-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-top: 13%;
+    margin-inline-start: 45%;
+}
+   
+
+@media screen and (max-width: 600px) {
+    .resume-link .resume-button {
+        margin-inline-start: 25%;
+    }
+}
+
+
+
+.resume-button {
+    width: 12rem;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-button {
+        width: 10rem;
+        height: auto;
+    }
+}
+   
+button.resume-button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #EF5350;
+    border-radius: 1.625rem;
+}
+
+   
+button.resume-button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+  
+button.resume-button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+@media screen and (max-width: 600px) {
+    button.resume-button .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+}
+ 
+   
+button.resume-button .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+   
+button.resume-button .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #999;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-button .button-text {
+        font-size: 1rem;
+    }
+}
+   
+button:hover .circle {
+    width: 100%;
+}
+   
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+button:hover .button-text {
+    color: #fff;
+}
