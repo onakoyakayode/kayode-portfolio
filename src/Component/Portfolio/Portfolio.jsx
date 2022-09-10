@@ -23,7 +23,7 @@ const Portfolio = () => {
                             <img src={data.image} alt='work' className='portfolio-img-img' />
                         </div>
                         <div className='portfolio-link'>
-                            <a href={data.link} target="_blank">{data.title}</a>
+                            <a href={data.link} target="_blank" rel="noopener noreferrer">{data.title}</a>
                         </div>
                     </div>
                     ))
