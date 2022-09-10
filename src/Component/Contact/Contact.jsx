@@ -50,7 +50,7 @@ const Contact = () => {
                                 
                                 <span className="tooltip-social">Github</span>
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                                 <img src={slack} alt='slack' className='user-slack' />
                                 <span className="tooltip-social">Slack</span>
                             </a>
