@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 4rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -40,7 +41,7 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
+        gap: 7rem;
     }
 }
 
@@ -267,14 +268,14 @@ form {
 
 
 .contact-bttn {
-    margin-top: 1.5rem;
+    margin-top: 4rem;
     width: max-content;
     margin-inline: auto;
 }
 
 @media screen and (max-width: 600px) {
     .contact-bttn {
-        margin-top: 1.9rem;
+        margin-top: 2rem;
     }
 }
 
